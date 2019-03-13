@@ -1,0 +1,118 @@
+<html>
+
+  <head>
+    <title>Gary Franks</title>
+    <meta name="description" content="Gary Franks is a photographer, graphic designer, and a ful stack developer.">
+    <link rel="stylesheet" href="https://use.typekit.net/bmo2pef.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bmo2pef.css">
+
+    <style>
+      body{
+        font-family: source-sans-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      h1{
+        font-family: century-old-style-std, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+        color: black;
+      }
+
+      h2{
+        font-size: 1rem;
+      }
+
+      a{
+        color: red;
+        text-decoration: none;
+      }
+
+      .main{
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+
+      .card{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1.1s ease;
+      }
+
+      .card:hover{
+        transform: rotateY(180deg);
+      }
+
+       .front{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+        overflow: hidden;
+        color: #000;
+      }
+
+      .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+        overflow: hidden;
+        text-align: center;
+        transform: rotateY(180deg);
+        background-image: url("images/circle.svg");
+        background-position: 50% 65%;
+        background-repeat: no-repeat;
+        background-size: 60%;
+      }
+
+      #logo{
+        width: 100%;
+        height: 100%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+  <div class="main">
+    <div class="card">
+      <div class="front">
+        <img src="images/web-logo.svg" alt="logo" id="logo">
+      </div>
+      <div class="back">
+        <div class="links">
+          <h1>Gary Franks</h1>
+          <h2><a href="https://github.com/gfrnks">Github</a></h2>
+          <h2><a href="https://www.linkedin.com/in/gary-franks-756a9416a/">LinkedIn</a></h2>
+          <h2><a href="http://www.instagram.com/garyfranks.ca">Instagram</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
